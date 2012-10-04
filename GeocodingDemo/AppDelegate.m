@@ -7,15 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // マップビュー
+	MapViewController *mapViewController = [[MapViewController alloc] init];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+	//[navigationController setNavigationBarHidden:YES animated:NO];
+	//navigationController_.navigationBar.translucent = YES;
+	//navigationController_.navigationBar.tintColor = THEME_COLOR;
+	//[navigationController_ setToolbarHidden:NO animated:NO];
+	//navigationController_.toolbar.tintColor = THEME_COLOR;
+	
+    // Add the navigation controller's view to the window and display.
+    [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

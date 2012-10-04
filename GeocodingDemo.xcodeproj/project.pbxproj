@@ -16,6 +16,9 @@
 		21B9E50F161D44BF00FC1028 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B9E50E161D44BF00FC1028 /* Default.png */; };
 		21B9E511161D44BF00FC1028 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B9E510161D44BF00FC1028 /* Default@2x.png */; };
 		21B9E513161D44BF00FC1028 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B9E512161D44BF00FC1028 /* Default-568h@2x.png */; };
+		21B9E51E161D45B800FC1028 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B9E51D161D45B800FC1028 /* MapViewController.m */; };
+		21B9E520161D465C00FC1028 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B9E51F161D465C00FC1028 /* CoreLocation.framework */; };
+		21B9E522161D466500FC1028 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B9E521161D466500FC1028 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		21B9E50E161D44BF00FC1028 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		21B9E510161D44BF00FC1028 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		21B9E512161D44BF00FC1028 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		21B9E51C161D45B800FC1028 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		21B9E51D161D45B800FC1028 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		21B9E51F161D465C00FC1028 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		21B9E521161D466500FC1028 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B9E522161D466500FC1028 /* MapKit.framework in Frameworks */,
+				21B9E520161D465C00FC1028 /* CoreLocation.framework in Frameworks */,
 				21B9E4FD161D44BF00FC1028 /* UIKit.framework in Frameworks */,
 				21B9E4FF161D44BF00FC1028 /* Foundation.framework in Frameworks */,
 				21B9E501161D44BF00FC1028 /* CoreGraphics.framework in Frameworks */,
@@ -68,7 +77,9 @@
 		21B9E4FB161D44BF00FC1028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21B9E521161D466500FC1028 /* MapKit.framework */,
 				21B9E4FC161D44BF00FC1028 /* UIKit.framework */,
+				21B9E51F161D465C00FC1028 /* CoreLocation.framework */,
 				21B9E4FE161D44BF00FC1028 /* Foundation.framework */,
 				21B9E500161D44BF00FC1028 /* CoreGraphics.framework */,
 			);
@@ -80,6 +91,8 @@
 			children = (
 				21B9E50B161D44BF00FC1028 /* AppDelegate.h */,
 				21B9E50C161D44BF00FC1028 /* AppDelegate.m */,
+				21B9E51C161D45B800FC1028 /* MapViewController.h */,
+				21B9E51D161D45B800FC1028 /* MapViewController.m */,
 				21B9E503161D44BF00FC1028 /* Supporting Files */,
 			);
 			path = GeocodingDemo;
@@ -166,6 +179,7 @@
 			files = (
 				21B9E509161D44BF00FC1028 /* main.m in Sources */,
 				21B9E50D161D44BF00FC1028 /* AppDelegate.m in Sources */,
+				21B9E51E161D45B800FC1028 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
