@@ -76,6 +76,12 @@
         {
             // エラーが発生している
             NSLog(@"error = %@", error);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"エラー"
+                                                            message:@"ジオコーディングに失敗しました"
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"Close"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
         else {
             NSLog(@"placemarks = %@", placemarks);
