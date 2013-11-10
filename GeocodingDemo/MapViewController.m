@@ -44,7 +44,7 @@
     [mapView_ setRegion:region animated:YES];
     
     UIBarButtonItem *currentButton =
-    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:100
+    [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
 												  target:self
 												  action:@selector(currentButtonAction)];
 	
